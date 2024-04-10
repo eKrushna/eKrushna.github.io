@@ -1,0 +1,337 @@
+ /* ________________ General Styles ________________ */
+
+   * {
+       box-sizing: border-box;
+   }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    font-size: large;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ________________ Container and Padding ________________ */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* ________________ Sections ________________ */
+
+section {
+    padding: 80px 0;
+}
+
+.skills .skill-item {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+    margin: 0 8px 0;
+}
+
+.skills .skill-item:hover {
+    background-color: #ccc;
+    color: red;
+}
+
+.portfolio-item {
+    float: left;
+    width: calc(33.33% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 0 8px 8px 0;
+}
+
+/* ________________ Header ________________ */
+
+header {
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+ header nav {
+     display: inline-block;
+ }
+
+ header nav ul {
+     list-style: none;
+     padding: 0;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ header nav ul li {
+     margin: 0 10px;
+ }
+
+ .nav-items {
+     font-size: medium;
+     text-decoration: none;
+     font-family: Verdana, system-ui;
+     color: whitesmoke;
+
+
+
+ }
+ /* ________________ About Me ________________ */
+
+ .about {
+     padding: 80px 0;
+     text-align: center;
+ }
+
+ .about img {
+     border-radius: 50%;
+     height: 150px;
+     width: 150px;
+     margin: 20px auto;
+     border: 4px solid #fff;
+ }
+
+ .about h2 {
+     font-size: 2em;
+     margin: 10px 0;
+ }
+
+ .about p {
+     font-size: 1.1em;
+     text-align: justify;
+     line-height: 1.7;
+ }
+
+ /* ________________ Skills ________________ */
+
+ .skills {
+     padding: 80px 0;
+     text-align: center;
+     margin: 10px 10px 10px 10px;
+ }
+
+ .skill-label {
+     font-size: 1.5em;
+     margin: 20px 0 0;
+     text-transform: uppercase;
+ }
+
+ .skill-item {
+     font-size: 1.2em;
+     margin: 10px 10px 10px 10px;
+ }
+
+ .skills .skill-item {
+     display: inline-block;
+     padding: 5px 10px;
+     background-color: #e5e5e5;
+     margin: 10px 8px 0;
+ }
+
+ /* ________________ Portfolio ________________ */
+
+ .portfolio {
+     padding: 80px 0;
+     text-align: center;
+ }
+
+ .portfolio-title {
+     font-size: 1.5em;
+     margin: 20px 0 30px 0;
+     text-transform: uppercase;
+ }
+
+ .portfolio-item img {
+     height: 200px;
+     width: auto;
+     margin: 10px auto;
+     max-width: 350px;
+ }
+
+ /* ________________ Contact ________________ */
+
+ .contact {
+     padding: 80px 0;
+     text-align: center;
+ }
+
+ .contact h2 {
+     font-size: 1.5em;
+     margin: 20px 0;
+ }
+
+ .contact i {
+     font-size: 3em;
+     margin: 10px;
+ }
+
+ footer {
+     background-color: #191919;
+     color: #fff;
+     text-align: center;
+     padding: 20px 0;
+ }
+ footer p {
+        font-size: 0.9em;
+        margin: 0;
+ }
+
+ @media (max-width: 768px) {
+     header nav ul {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .portfolio-item img {
+         height: 150px;
+         max-width: 250px;
+     }
+ }
+    /*contact custom file*/
+
+
+ .contact-form {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ .app-container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+ .input-group {
+     margin-bottom: 10px;
+ }
+
+ .input-group label {
+     display: block;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ input, textarea {
+     display: block;
+     width: 100%;
+     padding: 5px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+ }
+
+ .submit-button, .reset-button {
+     background-color: #4CAF50;
+     border: none;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     border-radius: 3px;
+ }
+
+ .submit-button {
+     margin-left: 10px;
+ }
+
+ .submit-button:hover, .reset-button:hover {
+     background-color: #45a049;
+ }
+
+ .reset-button {
+     margin-left: 10px;
+ }
+
+ .reset-button:hover {
+     background-color: #f44336;
+ }
+
+ /* ________________ Skills ________________ */
+
+ .projects{
+     padding: 80px 0;
+     text-align: center;
+ }
+
+ /* ________________ Follow ________________ */
+
+ .follow{
+     padding: 80px 0;
+     text-align: center;
+ }
+
+ .social{
+     border-top: 2px solid blue;
+     border-right: 1px dashed green;
+     border-bottom: 3px dotted orange;
+     border-left: 1px solid purple;
+     max-width: max-content;
+     align-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 5%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 7vh;
+ }
+
+ .social-icons{
+     padding: 7px;
+     justify-content: space-around;
+ }
+
+ #sl1,#sl2,#sl3,#sl4,#sl5{
+     padding: 7px;
+     justify-content: space-around;
+ }
+
+ .h{
+     font-size: 32px;
+ }
+
+ .btn{
+     /* Dark theme */
+     @media screen and (prefers-color-scheme: dark) {
+         p {
+             color: #fff;
+         }
+     }
+
+ }
